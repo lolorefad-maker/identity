@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>آيدينتيتي — Identity | ميديا وتسويق</title>
+  <meta name="description" content="آيدينتيتي — وكالة ميديا وتسويق. نصنع الهويّات: براندينج، سوشال ميديا، تصوير وفيديو، وإعلانات.">
+  <meta name="theme-color" content="#150c1d">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;800;900&family=Aref+Ruqaa:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=11">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+  <!-- Intro: an ink drop falls on paper and floods the screen -->
+  <div id="intro" aria-hidden="true">
+    <svg class="ink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <filter id="inkEdge" filterUnits="userSpaceOnUse" x="-60" y="-60" width="220" height="220">
+          <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" seed="3" result="n" />
+          <feDisplacementMap id="inkDisp" in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+      <g filter="url(#inkEdge)">
+        <circle class="ink-drop" cx="50" cy="-8" r="1.6" />
+        <circle class="ink-spatter" cx="38" cy="58" r="0" />
+        <circle class="ink-spatter" cx="63" cy="41" r="0" />
+        <circle class="ink-spatter" cx="58" cy="64" r="0" />
+        <circle class="ink-spatter" cx="41" cy="39" r="0" />
+      </g>
+    </svg>
+    <div class="intro-meta">
+      <span class="intro-count"><span class="num">0</span>%</span>
+      <span class="intro-tag" data-i18n="intro.tag">ميديا · تسويق · هويّات</span>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Identity">
+      <img src="assets/logo.png" alt="" width="44" height="44">
+      <span class="brand-text"><b>آيدينتيتي</b><small>IDENTITY</small></span>
+    </a>
+    <nav class="links">
+      <a href="#about" data-i18n="nav.about">من نحن</a>
+      <a href="#services" data-i18n="nav.services">الخدمات</a>
+      <a href="#work" data-i18n="nav.work">أعمالنا</a>
+      <a href="#contact" data-i18n="nav.contact">تواصل</a>
+    </nav>
+    <div class="nav-end">
+      <button class="lang" type="button" id="langBtn">EN</button>
+      <a class="pill" href="#contact">
+        <span data-i18n="nav.cta">ابدأ مشروعك</span>
+        <i class="pill-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" /></svg></i>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero-word" aria-hidden="true">IDENTITY</div>
+
+      <div class="hero-stage">
+        <div class="disc">
+          <svg class="star star-top" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2 10 10 2-10 2-2 10-2-10-10-2 10-2z" /></svg>
+          <svg class="star star-bottom" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2 10 10 2-10 2-2 10-2-10-10-2 10-2z" /></svg>
+        </div>
+        <canvas class="octo" id="heroOcto" aria-hidden="true"></canvas>
+        <div class="disc-word" aria-hidden="true">آيدينتيتي</div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow"><i class="dot"></i><span data-i18n="hero.eyebrow">وكالة ميديا وتسويق</span></p>
+        <h1 class="hero-title">
+          <span class="line"><span data-i18n="hero.l1">نصنع</span></span>
+          <span class="line"><span data-i18n="hero.l2">الهويّات.</span></span>
+        </h1>
+        <div class="hero-aside">
+          <p class="lead" data-i18n="hero.lead">الهوية القوية لا تُرى… بل تُحَسّ.</p>
+          <p class="small" data-i18n="hero.small">من الفكرة إلى الحملة، نبني براندات تشبه أصحابها وتصل لجمهورها.</p>
+        </div>
+      </div>
+
+      <ol class="hero-services">
+        <li><b>#01</b><span data-i18n="s1">الهوية البصرية</span></li>
+        <li><b>#02</b><span data-i18n="s2">السوشال ميديا</span></li>
+        <li><b>#03</b><span data-i18n="s3">التصوير والفيديو</span></li>
+        <li><b>#04</b><span data-i18n="s4">الإعلانات الممولة</span></li>
+      </ol>
+    </section>
+
+    <section class="clients" aria-labelledby="clientsLabel">
+      <p class="clients-label" id="clientsLabel" data-i18n="clients.label">براندات ساعدناها تكبر</p>
+      <div class="marquee"><div class="marquee-track"></div></div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p class="meta"><span class="meta-num">01 /</span><span data-i18n="man.label">الفكرة</span></p>
+      <div>
+        <p class="manifesto-text"></p>
+        <p class="manifesto-sign"><span class="arms">8</span><span data-i18n="man.sign">أذرع · هوية واحدة</span></p>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-side">
+      <div class="services-head">
+        <p class="meta"><span class="meta-num">02 /</span><span data-i18n="sv.label">الخدمات</span></p>
+        <h2 class="services-title"><span data-i18n="sv.t1">ثمانية أذرع.</span> <em data-i18n="sv.t2">هوية واحدة.</em></h2>
+      </div>
+      <div class="sv-detail" aria-live="polite">
+        <p class="sv-num"><bdi dir="ltr"><span class="cur">01</span> / 08</bdi></p>
+        <h3 class="sv-name"></h3>
+        <p class="sv-desc"></p>
+        <ul class="sv-tags"></ul>
+      </div>
+      </div>
+      <div class="services-stage">
+        <canvas class="octo" id="svOcto" aria-hidden="true"></canvas>
+        <ol class="sv-list"></ol>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="work-head">
+        <p class="meta"><span class="meta-num">03 /</span><span data-i18n="work.label">أعمال مختارة</span></p>
+        <p class="work-count"><span class="cur">01</span><span class="sep">/</span><span class="total">08</span></p>
+      </div>
+      <div class="work-names" aria-hidden="true"><div class="names-track"></div></div>
+      <div class="ring-viewport">
+        <div class="ring-stage">
+          <canvas class="octo ring-octo" id="ringOcto" aria-hidden="true"></canvas>
+        </div>
+      </div>
+      <div class="work-foot">
+        <div class="work-info">
+          <p class="work-cat"></p>
+          <p class="work-hint" data-i18n="work.hint">مرّر — الأخطبوط يتلوّن بألوان كل عميل</p>
+        </div>
+        <div class="camo">
+          <span data-i18n="work.camo">تمويه</span>
+          <i class="sw sw-bg"></i><i class="sw sw-ink"></i><i class="sw sw-accent"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="tunnel" id="tunnel">
+      <div class="tunnel-view" aria-hidden="true"><div class="tunnel-world"></div></div>
+      <div class="tunnel-glow" aria-hidden="true"></div>
+      <div class="tunnel-copy">
+        <p class="meta"><span class="meta-num">04 /</span><span data-i18n="tn.label">من الكواليس</span></p>
+        <h2 class="tunnel-title"><span class="tn-num">+<span class="tn-count">0</span></span><span class="tn-text" data-i18n="tn.t">قطعة محتوى كل شهر</span></h2>
+        <p class="tunnel-sub" data-i18n="tn.sub">بوستات، ستوريز، ريلز، تصوير وحملات — وكلها بنفس الهوية.</p>
+      </div>
+      <div class="tunnel-light" aria-hidden="true"><img src="assets/logo.png" alt=""></div>
+    </section>
+
+    <section class="process" id="process">
+      <p class="meta"><span class="meta-num">05 /</span><span data-i18n="pr.label">طريقتنا</span></p>
+      <h2 class="process-title"><span data-i18n="pr.t1">من نقطة حبر…</span> <em data-i18n="pr.t2">إلى هوية كاملة.</em></h2>
+      <div class="steps-wrap">
+        <svg class="ink-path" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 96C150 20 260 150 420 90S700 10 820 80 1080 150 1200 60" /></svg>
+        <ol class="steps">
+          <li class="step"><span class="step-n">01</span><h3 class="step-t" data-i18n="pr.s1">حبر</h3><p data-i18n="pr.s1d">نسمع ونفهم: جلسة اكتشاف، دراسة السوق والمنافسين، ومين جمهورك فعلًا.</p></li>
+          <li class="step"><span class="step-n">02</span><h3 class="step-t" data-i18n="pr.s2">شكل</h3><p data-i18n="pr.s2d">نرسم ونجرّب: الهوية البصرية، صوت البراند، وخطة المحتوى والحملة.</p></li>
+          <li class="step"><span class="step-n">03</span><h3 class="step-t" data-i18n="pr.s3">هوية</h3><p data-i18n="pr.s3d">نطلق ونكبر: نشر، إعلانات، وقياس كل شهر لنحسّن اللي بيشتغل.</p></li>
+        </ol>
+      </div>
+      <ul class="stats">
+        <li><b><span data-count="120">0</span>+</b><p data-i18n="st.1">براند بنينا هويته</p></li>
+        <li><b><span data-count="40">0</span>M+</b><p data-i18n="st.2">مشاهدة لحملاتنا</p></li>
+        <li><b><span data-count="8">0</span></b><p data-i18n="st.3">خدمات تحت سقف واحد</p></li>
+        <li><b><span data-count="6">0</span>+</b><p data-i18n="st.4">سنين خبرة</p></li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="meta"><span class="meta-num">06 /</span><span data-i18n="contact.label">تواصل</span></p>
+      <h2 class="contact-title">
+        <span class="line"><span data-i18n="contact.l1">خلّينا نصنع</span></span>
+        <span class="line"><em data-i18n="contact.l2">هويّتك.</em></span>
+      </h2>
+      <div class="contact-row">
+        <a class="pill pill-big" href="#contact">
+          <span data-i18n="contact.cta">احكي معنا على واتساب</span>
+          <i class="pill-dot" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" /></svg></i>
+        </a>
+        <p class="contact-note" data-i18n="contact.note">نرد خلال يوم عمل واحد.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-row">
+      <span>© 2026 <span data-i18n="foot.brand">آيدينتيتي</span></span>
+      <span data-i18n="foot.note">نموذج مقترح — المشاريع المعروضة للتوضيح فقط</span>
+    </div>
+    <div class="foot-word" aria-hidden="true">IDENTITY</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="octopus.js?v=11"></script>
+  <script src="main.js?v=11"></script>
+</body>
+</html>
